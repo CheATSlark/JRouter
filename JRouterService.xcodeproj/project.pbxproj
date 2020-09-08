@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5F3E1D7AFE901E0CB6C310C /* Pods_JRouterService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 769F7F360BD82C0E660341B4 /* Pods_JRouterService.framework */; };
+		F467CDF52507725D0064D915 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F467CDF42507725D0064D915 /* AppDelegate.swift */; };
+		F467CDF72507725D0064D915 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F467CDF62507725D0064D915 /* SceneDelegate.swift */; };
+		F467CDF92507725D0064D915 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F467CDF82507725D0064D915 /* ViewController.swift */; };
+		F467CDFC2507725D0064D915 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F467CDFA2507725D0064D915 /* Main.storyboard */; };
+		F467CDFE2507725F0064D915 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F467CDFD2507725F0064D915 /* Assets.xcassets */; };
+		F467CE012507725F0064D915 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F467CDFF2507725F0064D915 /* LaunchScreen.storyboard */; };
+		F467CE0F250772C90064D915 /* JRouterTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F467CE09250772C90064D915 /* JRouterTargetType.swift */; };
+		F467CE10250772C90064D915 /* JRProvider+Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F467CE0A250772C90064D915 /* JRProvider+Controller.swift */; };
+		F467CE11250772C90064D915 /* JRProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F467CE0B250772C90064D915 /* JRProvider.swift */; };
+		F467CE12250772C90064D915 /* JRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F467CE0C250772C90064D915 /* JRouter.swift */; };
+		F467CE13250772C90064D915 /* JRProvider+FlutterMethodCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = F467CE0D250772C90064D915 /* JRProvider+FlutterMethodCall.swift */; };
+		F467CE14250772C90064D915 /* JRouterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F467CE0E250772C90064D915 /* JRouterService.swift */; };
+		F467CE17250776500064D915 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F467CE15250776500064D915 /* FirstViewController.swift */; };
+		F467CE18250776500064D915 /* FirstRouterTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F467CE16250776500064D915 /* FirstRouterTarget.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		20E983005D1BB075CE14F43B /* Pods-JRouterService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRouterService.debug.xcconfig"; path = "Target Support Files/Pods-JRouterService/Pods-JRouterService.debug.xcconfig"; sourceTree = "<group>"; };
+		43237393B8E505682CA9090B /* Pods-JRouterService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRouterService.release.xcconfig"; path = "Target Support Files/Pods-JRouterService/Pods-JRouterService.release.xcconfig"; sourceTree = "<group>"; };
+		769F7F360BD82C0E660341B4 /* Pods_JRouterService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JRouterService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F467CDF12507725D0064D915 /* JRouterService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JRouterService.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F467CDF42507725D0064D915 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F467CDF62507725D0064D915 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F467CDF82507725D0064D915 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F467CDFB2507725D0064D915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F467CDFD2507725F0064D915 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F467CE002507725F0064D915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F467CE022507725F0064D915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F467CE09250772C90064D915 /* JRouterTargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRouterTargetType.swift; sourceTree = "<group>"; };
+		F467CE0A250772C90064D915 /* JRProvider+Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JRProvider+Controller.swift"; sourceTree = "<group>"; };
+		F467CE0B250772C90064D915 /* JRProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRProvider.swift; sourceTree = "<group>"; };
+		F467CE0C250772C90064D915 /* JRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRouter.swift; sourceTree = "<group>"; };
+		F467CE0D250772C90064D915 /* JRProvider+FlutterMethodCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JRProvider+FlutterMethodCall.swift"; sourceTree = "<group>"; };
+		F467CE0E250772C90064D915 /* JRouterService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRouterService.swift; sourceTree = "<group>"; };
+		F467CE15250776500064D915 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		F467CE16250776500064D915 /* FirstRouterTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstRouterTarget.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F467CDEE2507725D0064D915 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5F3E1D7AFE901E0CB6C310C /* Pods_JRouterService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D52BB631920A85C0C242B10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20E983005D1BB075CE14F43B /* Pods-JRouterService.debug.xcconfig */,
+				43237393B8E505682CA9090B /* Pods-JRouterService.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9467F9FB89711FAA26A44143 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				769F7F360BD82C0E660341B4 /* Pods_JRouterService.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F467CDE82507725D0064D915 = {
+			isa = PBXGroup;
+			children = (
+				F467CDF32507725D0064D915 /* JRouterService */,
+				F467CDF22507725D0064D915 /* Products */,
+				4D52BB631920A85C0C242B10 /* Pods */,
+				9467F9FB89711FAA26A44143 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F467CDF22507725D0064D915 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F467CDF12507725D0064D915 /* JRouterService.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F467CDF32507725D0064D915 /* JRouterService */ = {
+			isa = PBXGroup;
+			children = (
+				F467CE082507726E0064D915 /* JRouter */,
+				F467CDF42507725D0064D915 /* AppDelegate.swift */,
+				F467CDF62507725D0064D915 /* SceneDelegate.swift */,
+				F467CDF82507725D0064D915 /* ViewController.swift */,
+				F467CE16250776500064D915 /* FirstRouterTarget.swift */,
+				F467CE15250776500064D915 /* FirstViewController.swift */,
+				F467CDFA2507725D0064D915 /* Main.storyboard */,
+				F467CDFD2507725F0064D915 /* Assets.xcassets */,
+				F467CDFF2507725F0064D915 /* LaunchScreen.storyboard */,
+				F467CE022507725F0064D915 /* Info.plist */,
+			);
+			path = JRouterService;
+			sourceTree = "<group>";
+		};
+		F467CE082507726E0064D915 /* JRouter */ = {
+			isa = PBXGroup;
+			children = (
+				F467CE0C250772C90064D915 /* JRouter.swift */,
+				F467CE0E250772C90064D915 /* JRouterService.swift */,
+				F467CE09250772C90064D915 /* JRouterTargetType.swift */,
+				F467CE0B250772C90064D915 /* JRProvider.swift */,
+				F467CE0A250772C90064D915 /* JRProvider+Controller.swift */,
+				F467CE0D250772C90064D915 /* JRProvider+FlutterMethodCall.swift */,
+			);
+			path = JRouter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F467CDF02507725D0064D915 /* JRouterService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F467CE052507725F0064D915 /* Build configuration list for PBXNativeTarget "JRouterService" */;
+			buildPhases = (
+				9EEDC7C2E0CE23CD62F33956 /* [CP] Check Pods Manifest.lock */,
+				F467CDED2507725D0064D915 /* Sources */,
+				F467CDEE2507725D0064D915 /* Frameworks */,
+				F467CDEF2507725D0064D915 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JRouterService;
+			productName = JRouterService;
+			productReference = F467CDF12507725D0064D915 /* JRouterService.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F467CDE92507725D0064D915 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "焦瑞洁";
+				TargetAttributes = {
+					F467CDF02507725D0064D915 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = F467CDEC2507725D0064D915 /* Build configuration list for PBXProject "JRouterService" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F467CDE82507725D0064D915;
+			productRefGroup = F467CDF22507725D0064D915 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F467CDF02507725D0064D915 /* JRouterService */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F467CDEF2507725D0064D915 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F467CE012507725F0064D915 /* LaunchScreen.storyboard in Resources */,
+				F467CDFE2507725F0064D915 /* Assets.xcassets in Resources */,
+				F467CDFC2507725D0064D915 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9EEDC7C2E0CE23CD62F33956 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JRouterService-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F467CDED2507725D0064D915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F467CDF92507725D0064D915 /* ViewController.swift in Sources */,
+				F467CDF52507725D0064D915 /* AppDelegate.swift in Sources */,
+				F467CE13250772C90064D915 /* JRProvider+FlutterMethodCall.swift in Sources */,
+				F467CE18250776500064D915 /* FirstRouterTarget.swift in Sources */,
+				F467CE14250772C90064D915 /* JRouterService.swift in Sources */,
+				F467CE10250772C90064D915 /* JRProvider+Controller.swift in Sources */,
+				F467CE17250776500064D915 /* FirstViewController.swift in Sources */,
+				F467CE0F250772C90064D915 /* JRouterTargetType.swift in Sources */,
+				F467CE11250772C90064D915 /* JRProvider.swift in Sources */,
+				F467CE12250772C90064D915 /* JRouter.swift in Sources */,
+				F467CDF72507725D0064D915 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F467CDFA2507725D0064D915 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F467CDFB2507725D0064D915 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F467CDFF2507725F0064D915 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F467CE002507725F0064D915 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F467CE032507725F0064D915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F467CE042507725F0064D915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F467CE062507725F0064D915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20E983005D1BB075CE14F43B /* Pods-JRouterService.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R89R98GE4N;
+				INFOPLIST_FILE = JRouterService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Slark.JRouterService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F467CE072507725F0064D915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43237393B8E505682CA9090B /* Pods-JRouterService.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R89R98GE4N;
+				INFOPLIST_FILE = JRouterService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Slark.JRouterService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F467CDEC2507725D0064D915 /* Build configuration list for PBXProject "JRouterService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F467CE032507725F0064D915 /* Debug */,
+				F467CE042507725F0064D915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F467CE052507725F0064D915 /* Build configuration list for PBXNativeTarget "JRouterService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F467CE062507725F0064D915 /* Debug */,
+				F467CE072507725F0064D915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F467CDE92507725D0064D915 /* Project object */;
+}
