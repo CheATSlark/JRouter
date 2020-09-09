@@ -4,14 +4,13 @@
 //
 //  Created by 焦瑞洁 on 2020/9/8.
 //
-import Flutter
 
 // MARK: - Flutter
 extension JRProvider {
     func linkFlutter(_ target: Target, targetClass: Any, completion: @escaping JRCompletion, linkPoint: LinkPoint) {
         switch target.jump {
         case .method:
-            guard let flutterMethod = targetClass as? FlutterMethodCall else { return }
+            guard let flutterMethod = targetClass as? FlutterMethodProtocol else { return }
             flutterMethod.handleMethod(completion: completion)
             break
         default:
@@ -20,11 +19,11 @@ extension JRProvider {
     }
 }
 
-protocol FlutterMethodProtocol: FlutterMethodCall {
+protocol FlutterMethodProtocol {
     func handleMethod(completion: @escaping JRCompletion)
 }
 
-extension FlutterMethodCall: FlutterMethodProtocol {
+extension FlutterMethodProtocol {
     func handleMethod(completion: @escaping JRCompletion) {
 
     }
