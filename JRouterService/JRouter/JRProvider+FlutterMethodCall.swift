@@ -19,7 +19,7 @@ extension JRProvider {
     }
 }
 
-protocol FlutterMethodProtocol {
+public protocol FlutterMethodProtocol {
     func handleMethod(completion: @escaping JRCompletion)
 }
 

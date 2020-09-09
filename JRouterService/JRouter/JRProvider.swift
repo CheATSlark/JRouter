@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias JRCompletion = (_ result: Any) -> Void
+public typealias JRCompletion = (_ result: Any) -> Void
 
 ///
 protocol JRProviderType: AnyObject {
