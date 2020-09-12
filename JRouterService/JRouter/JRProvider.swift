@@ -69,16 +69,12 @@ extension JRProvider {
     
     private func intercept(perform: @escaping((Target, Any, @escaping JRCompletion, LinkPoint)->()), target: Target, completion: @escaping JRCompletion, linkPoint: LinkPoint){
         if target.isIntercept == true {
-            var targetClass: Any? = nil
-            interceptClosure = { (it) in
+            interceptClosure = { [weak self, target, completion, linkPoint](it) in
                 if it == true{
-                    if let lastClass = targetClass  {
-                        perform(target, lastClass, completion, linkPoint)
-                    }
+                    perform(target, target.targetClass, completion, linkPoint)
                 }
+                self?.interceptClosure = nil
             }
-            // 先进行目标初始化，才能进到拦截的异步回调之中
-            targetClass = target.targetClass
         }else{
             perform(target, target.targetClass, completion, linkPoint)
         }

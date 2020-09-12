@@ -10,6 +10,9 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+    deinit {
+        print("release viewcontroller")
+    }
     
     var delayOut: ((Bool)->Void)?
     
@@ -20,6 +23,9 @@ class FirstViewController: UIViewController {
     }
     
     
+    @IBAction func action(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     
     
