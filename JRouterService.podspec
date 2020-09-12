@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'JRouter'
+  s.name             = 'JRouterService'
   s.version          = '0.1.0'
   s.summary          = 'JRouter is a way to communicate between modules'
 
