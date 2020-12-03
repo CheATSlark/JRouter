@@ -12,7 +12,7 @@ extension JRProvider {
     func linkController(_ target: Target, targetClass: Any, completion: @escaping JRCompletion, linkPoint: LinkPoint){
         let from = target.from as? UIViewController
         switch target.jump {
-        case .present, .embed_present, .root_present, .dismiss:
+        case .present, .embed_present, .root_present, .dismiss, .sheet:
             
             guard let controller = targetClass as? UIViewController else {
                 if target.jump == .dismiss {
@@ -21,7 +21,7 @@ extension JRProvider {
                 }
                 return
             }
-            presnet(target, from: from, to: controller,jump: target.jump)
+            presnet(target, from: from, to: controller,jump: target.jump, linkPoint: linkPoint)
         case .push, .pop:
             let controller = targetClass as? UIViewController
             push(from, to: controller, jump: target.jump)
@@ -30,11 +30,16 @@ extension JRProvider {
         }
     }
     
-    func presnet(_ target: Target, from: UIViewController?, to: UIViewController,jump: JRJump) {
+    func presnet(_ target: Target, from: UIViewController?, to: UIViewController,jump: JRJump, linkPoint: LinkPoint) {
         guard let currentViewController = from ?? UIViewController.topController else { return }
         switch jump {
-        case .present:
-            to.modalPresentationStyle = .fullScreen
+        case .present, .sheet:
+            if jump == .sheet {
+                to.modalPresentationStyle = .custom
+                to.transitioningDelegate = linkPoint
+            }else{
+                to.modalPresentationStyle = .fullScreen
+            }
             currentViewController.present(to, animated: true)
         case .dismiss:
             currentViewController.dismiss(animated: true, completion: nil)
@@ -120,3 +125,4 @@ private extension UIViewController {
         return ViewController
     }
 }
+

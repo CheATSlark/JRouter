@@ -14,7 +14,7 @@ enum FirstRouterTarget {
 }
 
 extension FirstRouterTarget: JRouterTargetType {
-    
+   
     var navigationClass: UINavigationController.Type {
         UINavigationController.self
     }
@@ -22,7 +22,7 @@ extension FirstRouterTarget: JRouterTargetType {
     var jump: JRJump {
         switch self {
         case .first:
-            return .present
+            return .sheet
         case .out:
             return .dismiss
         }
@@ -54,5 +54,9 @@ extension FirstRouterTarget: JRouterTargetType {
         case .out:
           return  true
         }
+    }
+    
+    var fixedHeight: CGFloat? {
+        return 120
     }
 }

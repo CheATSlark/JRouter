@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 public typealias JRCompletion = (_ result: Any) -> Void
 
@@ -84,14 +85,22 @@ extension JRProvider {
 extension JRProvider {
     final class func defaultLinkpointMapping(for target: Target) -> LinkPoint {
         return LinkPoint(
-            type: target.type
+            type: target.type,
+            fixedHeight: target.fixedHeight
         )
     }
 }
 
-class LinkPoint {
+class LinkPoint:NSObject, UIViewControllerTransitioningDelegate {
     let type: JRType
-    init(type: JRType){
+    let fixedHeight: CGFloat?
+    init(type: JRType, fixedHeight: CGFloat?){
         self.type = type
+        self.fixedHeight = fixedHeight
+    }
+    public func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        let presentation = JDrawerPresentationController(presentedViewController: presented, presenting: presenting, blurEffectStyle: .dark)
+        presentation.fixedHeight = fixedHeight
+        return presentation
     }
 }

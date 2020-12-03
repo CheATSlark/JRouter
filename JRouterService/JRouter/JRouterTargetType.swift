@@ -24,7 +24,8 @@ public enum JRJump {
     case embed_present
     /// 根视图推出
     case root_present
-    
+    /// 从底部弹出 并未达到全屏
+    case sheet
     /// 路由方法，类似 flutter method
     case method
 }
@@ -56,7 +57,16 @@ public protocol JRouterTargetType {
     var isIntercept: Bool { get }
     /// 拦截回调
     var intercept: ((Bool)->Void)? { get set }
+    
+    /// Sheet 模式下的高度
+    var fixedHeight: CGFloat? { get }
 }
+
+public protocol JRouterTargetPresentationType {
+    
+    var fixedHeight: CGFloat? { get }
+}
+
 
 fileprivate var temporary: ((Bool)->Void)?  = nil
 
@@ -72,6 +82,12 @@ public extension JRouterTargetType {
     
     var isIntercept: Bool {
         return false
+    }
+}
+
+public extension JRouterTargetType {
+    var fixedHeight: CGFloat? {
+        nil
     }
 }
 
@@ -113,6 +129,10 @@ public enum JRouterTarget: JRouterTargetType {
     
    public var isIntercept: Bool {
         return target.isIntercept
+    }
+    
+    public var fixedHeight: CGFloat? {
+        return target.fixedHeight
     }
     
     public var target: JRouterTargetType {

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A5F3E1D7AFE901E0CB6C310C /* Pods_JRouterService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 769F7F360BD82C0E660341B4 /* Pods_JRouterService.framework */; };
+		F453D1C52578CB3700C6E409 /* JDrawerPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F453D1C32578CB3600C6E409 /* JDrawerPresentationController.swift */; };
+		F453D1C62578CB3700C6E409 /* JDrawerPresentationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F453D1C42578CB3700C6E409 /* JDrawerPresentationControllerDelegate.swift */; };
 		F467CDF52507725D0064D915 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F467CDF42507725D0064D915 /* AppDelegate.swift */; };
 		F467CDF72507725D0064D915 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F467CDF62507725D0064D915 /* SceneDelegate.swift */; };
 		F467CDF92507725D0064D915 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F467CDF82507725D0064D915 /* ViewController.swift */; };
@@ -28,6 +30,8 @@
 		20E983005D1BB075CE14F43B /* Pods-JRouterService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRouterService.debug.xcconfig"; path = "Target Support Files/Pods-JRouterService/Pods-JRouterService.debug.xcconfig"; sourceTree = "<group>"; };
 		43237393B8E505682CA9090B /* Pods-JRouterService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRouterService.release.xcconfig"; path = "Target Support Files/Pods-JRouterService/Pods-JRouterService.release.xcconfig"; sourceTree = "<group>"; };
 		769F7F360BD82C0E660341B4 /* Pods_JRouterService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JRouterService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F453D1C32578CB3600C6E409 /* JDrawerPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JDrawerPresentationController.swift; sourceTree = "<group>"; };
+		F453D1C42578CB3700C6E409 /* JDrawerPresentationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JDrawerPresentationControllerDelegate.swift; sourceTree = "<group>"; };
 		F467CDF12507725D0064D915 /* JRouterService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JRouterService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F467CDF42507725D0064D915 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F467CDF62507725D0064D915 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 				F467CE0B250772C90064D915 /* JRProvider.swift */,
 				F467CE0A250772C90064D915 /* JRProvider+Controller.swift */,
 				F467CE0D250772C90064D915 /* JRProvider+FlutterMethodCall.swift */,
+				F453D1C32578CB3600C6E409 /* JDrawerPresentationController.swift */,
+				F453D1C42578CB3700C6E409 /* JDrawerPresentationControllerDelegate.swift */,
 			);
 			path = JRouter;
 			sourceTree = "<group>";
@@ -224,11 +230,13 @@
 				F467CDF52507725D0064D915 /* AppDelegate.swift in Sources */,
 				F467CE13250772C90064D915 /* JRProvider+FlutterMethodCall.swift in Sources */,
 				F467CE18250776500064D915 /* FirstRouterTarget.swift in Sources */,
+				F453D1C62578CB3700C6E409 /* JDrawerPresentationControllerDelegate.swift in Sources */,
 				F467CE14250772C90064D915 /* JRouterService.swift in Sources */,
 				F467CE10250772C90064D915 /* JRProvider+Controller.swift in Sources */,
 				F467CE17250776500064D915 /* FirstViewController.swift in Sources */,
 				F467CE0F250772C90064D915 /* JRouterTargetType.swift in Sources */,
 				F467CE11250772C90064D915 /* JRProvider.swift in Sources */,
+				F453D1C52578CB3700C6E409 /* JDrawerPresentationController.swift in Sources */,
 				F467CE12250772C90064D915 /* JRouter.swift in Sources */,
 				F467CDF72507725D0064D915 /* SceneDelegate.swift in Sources */,
 			);
