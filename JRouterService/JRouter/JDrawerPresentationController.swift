@@ -67,8 +67,12 @@ class JDrawerPresentationController: UIPresentationController {
     public var roundedCorners: UIRectCorner = [.topLeft, .topRight]
     
     /// Sheet fixed height
-    /// the default valu is nil for unset
+    /// the default value  is nil for unset
     public var fixedHeight: CGFloat?
+    
+    /// Sheet background Color
+    /// the defalut value is nil for Blur
+    public var bkgColor: UIColor?
     
     /// Frame for the modally presented view.
     override public var frameOfPresentedViewInContainerView: CGRect {
@@ -79,12 +83,21 @@ class JDrawerPresentationController: UIPresentationController {
     /// Private Attributes
     private var currentSnapPoint: DraweSnapPoint = .middle
     
-    private lazy var blurEffectView: UIVisualEffectView = {
-        let blur = UIVisualEffectView(effect: UIBlurEffect(style: self.blurEffectStyle))
-        blur.isUserInteractionEnabled = true
-        blur.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        blur.addGestureRecognizer(self.tapGestureRecognizer)
-        return blur
+    private lazy var blurEffectView: UIView = {
+        if let bkgColor = bkgColor {
+            let bkg = UIView()
+            bkg.isUserInteractionEnabled = true
+            bkg.backgroundColor = bkgColor
+            bkg.addGestureRecognizer(tapGestureRecognizer)
+            return bkg
+        }else{
+            let blur = UIVisualEffectView(effect: UIBlurEffect(style: self.blurEffectStyle))
+            blur.isUserInteractionEnabled = true
+            blur.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            blur.addGestureRecognizer(self.tapGestureRecognizer)
+            return blur
+        }
+        
     }()
     
     private lazy var tapGestureRecognizer: UITapGestureRecognizer = {
@@ -145,12 +158,12 @@ class JDrawerPresentationController: UIPresentationController {
     override public func containerViewDidLayoutSubviews() {
         super.containerViewDidLayoutSubviews()
         guard let presenterView = self.containerView else { return }
-        guard let presentedView = self.presentedView else { return }
+//        guard let presentedView = self.presentedView else { return }
         
         // Set the frame and position of the modal
-        presentedView.frame = self.frameOfPresentedViewInContainerView
-        presentedView.frame.origin.x = (presenterView.frame.width - presentedView.frame.width) / 2
-        presentedView.center = CGPoint(x: presentedView.center.x, y: presenterView.center.y * 2)
+//        presentedView.frame = self.frameOfPresentedViewInContainerView
+//        presentedView.frame.origin.x = (presenterView.frame.width - presentedView.frame.width) / 2
+//        presentedView.center = CGPoint(x: presentedView.center.x, y: presenterView.center.y * 2)
         
         // Set the blur effect frame, behind the modal
         self.blurEffectView.frame = presenterView.bounds

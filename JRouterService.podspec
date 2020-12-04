@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JRouterService'
-  s.version          = '0.3.0'
+  s.version          = '0.3.1'
   s.summary          = 'JRouter is a way to communicate between modules'
 
 # This description is used to generate tags and improve search results.
@@ -28,10 +28,11 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/CheATSlark/JRouter.git', :tag => "#{s.version}"}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'JRouterService/JRouter/*'
   
+  s.swift_version = '5.0'
   # s.resource_bundles = {
   #   'JRouter' => ['JRouter/Assets/*.png']
   # }

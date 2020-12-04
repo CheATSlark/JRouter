@@ -56,7 +56,7 @@ extension FirstRouterTarget: JRouterTargetType {
         }
     }
     
-    var fixedHeight: CGFloat? {
-        return 120
-    }
+//    var fixedHeight: CGFloat? {
+//        return 445
+//    }
 }

@@ -101,6 +101,7 @@ class LinkPoint:NSObject, UIViewControllerTransitioningDelegate {
     public func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
         let presentation = JDrawerPresentationController(presentedViewController: presented, presenting: presenting, blurEffectStyle: .dark)
         presentation.fixedHeight = fixedHeight
+        presentation.bkgColor = UIColor.black.withAlphaComponent(0.6)
         return presentation
     }
 }
