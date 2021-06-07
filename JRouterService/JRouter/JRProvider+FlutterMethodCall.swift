@@ -10,9 +10,9 @@ extension JRProvider {
     func linkFlutter(_ target: Target, targetClass: Any, completion: @escaping JRCompletion, linkPoint: LinkPoint) {
         switch target.jump {
         case .method:
-            guard let flutterMethod = targetClass as? FlutterMethodProtocol else { return }
-            flutterMethod.handleMethod(completion: completion)
-            break
+            guard let flutterTuple = targetClass as? (Any, Any) else { return }
+            guard let flutterMethod = flutterTuple.0 as? FlutterMethodProtocol else { return }
+            flutterMethod.handleMethod(result: flutterTuple.1, completion: completion)
         default:
             break
         }
@@ -20,11 +20,11 @@ extension JRProvider {
 }
 
 public protocol FlutterMethodProtocol {
-    func handleMethod(completion: @escaping JRCompletion)
+    func handleMethod(result: Any?, completion: @escaping JRCompletion)
 }
 
 extension FlutterMethodProtocol {
-    func handleMethod(completion: @escaping JRCompletion) {
-
+    func handleMethod(result: Any?, completion: @escaping JRCompletion) {
+        
     }
 }
