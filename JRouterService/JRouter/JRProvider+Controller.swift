@@ -122,7 +122,14 @@ private extension UIViewController {
             pageVC.viewControllers?.count == 1{
             return self.autoGetTopController(of: pageVC.viewControllers?.first)
         }
+        if ViewController?.className.contains("UIHostingController") == true {
+            return self.autoGetTopController(of: ViewController?.children.first)
+        }
         return ViewController
+    }
+    
+    var className: String {
+        String(describing: Self.self)
     }
 }
 
