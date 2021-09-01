@@ -49,3 +49,5 @@ extension JRouterWrapper where Base: UIApplication {
         return Base.perform(selector).takeUnretainedValue() as? UIApplication
     }
 }
+
+

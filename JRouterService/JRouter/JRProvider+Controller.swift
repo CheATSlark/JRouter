@@ -132,4 +132,9 @@ private extension UIViewController {
         String(describing: Self.self)
     }
 }
-
+/// 获取顶层控制器
+public extension JRouterService {
+    static var topViewController: UIViewController? {
+        UIViewController.topController
+    }
+}

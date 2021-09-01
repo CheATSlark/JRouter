@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol JDrawerPresentationControllerDelegate: class {
+public protocol JDrawerPresentationControllerDelegate: AnyObject {
     func drawerMovedTo(position: DraweSnapPoint)
 }
 
